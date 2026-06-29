@@ -1,4 +1,0 @@
-## Details and Promises
-*Here in this repository before June 2026, i write all the simple html and css and js codes that i've learned in my school time. But from the June 2026, i'm going to start leaning full stack development and i've already finished HTML 5 and Basic CSS and now i'm heading towards JavaScript. The progress will be committed and pushes on this repo on time.*
-# NOTE : 
-*To look the projects I've made, you can visit `main` branch of this repository.*
