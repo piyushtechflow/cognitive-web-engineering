@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-Span-Grouping</title>
+</head>
+
+<body>
+
+    <!-- Div: Block level container -->
+    <div>
+        <h2>About Me</h2>
+        <p>Hey! I am Piyush and i am learning HTML5!</p>
+    </div>
+    <hr>
+
+    <!-- Span: Inline Container -->
+    <h2>More about me</h2>
+    <p>I am learning <span>HTML5</span>and CSS.</p>
+    <hr>
+
+    <!-- Use Semantic Tags instead of div wherever possible -->
+
+    <!-- Div: No Meaning and Pure grouping.
+        Section: Has Meaning, Represents a thematoc group and should have a heading.-->
+
+    <section>
+        <h2>Skills(Section)</h2>
+        <p>HTML, CSS, JS</p>
+    </section>
+    <div>
+        <h2>My Skills(Div)</h2>
+        <p>HTML, CSS, JS</p>
+    </div>
+
+    <!-- Using Section instead of of div improves SEO and accessibility. -->
+
+    <!-- Same for span: Only used when inline semantic tags (strong, em, mark) don't used. -->
+    <hr>
+    <h2>Practice Session</h2>
+    <main>
+        <section>
+            <h3>About Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum excepturi corrupti sequi cumque
+                molestiae,<mark> aliquid officiis</mark> libero natus fugiat eveniet minus atque consequatur distinctio quaerat hic?
+                Id quaerat assumenda tempore velit alias, nihil commodi tempora tenetur ipsa corrupti sequi vitae?</p>
+        </section>
+    </main>
+    <hr>
+    <div>
+        <img src="SUNSET.jpg" alt="Evening Time" width="250" title="This is Sunset">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+</head>
+
+<body>
+    <!-- Attributes give extra information about the an HTML element. -->
+    <!-- <tag attribute = "value">Content</tag> -->
+
+    <h3>ID attribute</h3>
+    <!-- Must be unique on a page. -->
+
+    <section id="about">
+        <h2>About Me</h2>
+    </section>
+
+    <a href="#about">About Me</a>
+    <hr>
+
+    <h3>Class attribute</h3>
+    <!-- Can be reusable in the page and one element can have multiple classes. -->
+
+    <div class="about">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti provident nobis velit perspiciatis quasi
+            facere id adipisci ducimus! Accusantium atque sit et adipisci velit accusamus voluptatem deserunt
+            consequatur voluptas quos. Nesciunt, mollitia veritatis impedit quam sint culpa eos explicabo repellendus
+            veniam saepe, nemo quidem quasi.</p>
+    </div>
+
+    <!-- Two Classes -->
+    <div class="text highlight">
+        <p><mark>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tenetur quo quidem cupiditate labore
+                omnis, aperiam exercitationem repellendus voluptatum in adipisci harum voluptate, facilis molestias
+                aspernatur nam perspiciatis? Quidem, molestiae?</mark></p>
+    </div>
+    <hr>
+
+    <h3>Attributes used in HTML 5 forms</h3>
+    <!-- name, value, placeholder, required, disable/readonly -->
+    <!-- Let's look the usecase. -->
+
+    <!-- name- used in forms backend communication. -->
+    <input type="text" name="userName" id="name">
+
+    <!-- value - send default value to the database -->
+    <input type="text" name="name" id="name" value="Piyush">
+
+    <!-- placeholder - hint the text -->
+    <input type="text" name="name" id="name_1" placeholder="Enter your name: ">
+
+    <!-- required - HTML 5 validation -->
+    <input type="email" name="email" id="email" required>
+
+    <!-- disabled/readonly  -->
+    <input type="text" name="address" id="address" disabled>
+    <input type="text" name="address_p" id="address_p" readonly placeholder="Enter your permanent address: ">
+    <hr>
+
+    <h3>Global Attributes</h3>
+    <!-- id, class, title, style, hidden -->
+    <!-- We have already seen id and classes. The style attribute will learned in CSS. -->
+
+    <!-- title - shown to the user when they hover on it. -->
+    <div title="Tooltip text">Hover Me</div>
+
+    <!-- hidden - This will never shown to the user -->
+    <div hidden>Hello World</div>
+
+    <!-- Also HTML 5 allows custom attributes and they used mostly with JavaScript Later. -->
+
+</body>
+
+</html>

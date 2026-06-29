@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <table border="2px solid black">
+        <caption>Student's Skill</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Skill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Piyush</td>
+                <td>Full Stack</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- thead and tbody are not mandatory but its a good habit. -->
+    <hr>
+    <table border="2px solid red">
+        <caption>Use of rowspan and colspan</caption>
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Skill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td colspan="2">0011</td> -->
+                <td>0011</td>
+                <td>Piyush</td>
+                <td rowspan="2">Full Stack</td>
+            </tr>
+            <tr>
+                <td>0012</td>
+                <td>Abhishek</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Real Use Case of Table</h2>
+
+    <section>
+        <h2>Course Progress</h2>
+        <table border="2px solid blue">
+            <caption>Learning Status</caption>
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Almost Completed</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Upcoming</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+</body>
+
+</html>
