@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Making</title>
+</head>
+
+<body>
+    <!-- Forms collect user's input and send it to the database. -->
+
+    <!-- In HTML 5 the way of creating forms has changed -->
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+    </form>
+    <hr>
+
+    <!-- Common Input Types -->
+    <h4>For Text:</h4>
+    <input type="text" name="" id="">
+
+    <!-- HTML 5 feature -->
+    <h4>For Email:</h4>
+    <input type="email" name="email" id="email" placeholder="Enter your email: ">
+    <h4>For Password:</h4>
+    <input type="password" name="password" id="password" placeholder="Enter your password:">
+    <h4>For Numbers: </h4>
+    <input type="number" name="number" id="number" placeholder="Enter a number: ">
+    <h4>For Date: </h4>
+    <input type="date" name="date" id="date" placeholder="Enter the date:">
+    <h4>For long text:</h4>
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="1"></textarea>
+    <h4>Buttons:</h4>
+    <button type="submit">Finish</button>
+    <button type="reset">Reset</button>
+    <hr>
+
+    <!-- HTML Semantic Form Tags -->
+    <h3>Fieldset and Legend</h3>
+    <!-- Their Use: Groups related inputs and better accessibility and clean structure. -->
+    <form action="">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name:" required>
+            <br><br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" required placeholder="Enter your address:" rows="1"></textarea>
+            <br><br>
+            <label for="dob">DOB: </label>
+            <input type="date" name="dob" id="dob" required>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    <!-- Real Use of Forms -->
+     
+    <section>
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="message">Message: </label>
+            <textarea id="message" rows="2">Message:</textarea>
+            <br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
