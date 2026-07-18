@@ -1,0 +1,11 @@
+***** The Challenge is going to begin on 15th of July, 2026. *****
+
+### DAY 1: 
+	** Learn:	
+		-> var, let, const, strings, numbers, booleans, null, undefined, arithmetic comparison and logical operators
+	** Practice: 
+		-> Calculator expression, type checking with typeof, String concatenation, template literals
+	** Challenge:
+		-> Simple "age eligibility checker" using varables and opeartors
+
+## DONE ❌

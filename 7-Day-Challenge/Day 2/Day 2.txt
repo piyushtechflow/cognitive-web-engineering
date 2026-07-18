@@ -1,0 +1,10 @@
+***** DAY 2 *****
+
+# Topic: 
+	-- if/else, ternary operators, for, while, for of, for in loops
+
+# Practice
+	-- Fizbuzz even/odd checker, multiplication table
+
+# Challenge
+	-- Number guessing game(hardcoded number, users input via prompt())

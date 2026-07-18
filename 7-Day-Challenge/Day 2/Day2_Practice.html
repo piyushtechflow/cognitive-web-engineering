@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <main>
+      <h2>It's a practice page to write some js program.</h2>
+      <h3>Its a fizzbuzz program</h3>
+      <p>
+        If a number between 1 to 20 is divisible by 3 prints fizz, and if
+        divisible by 5 print buzz, and if both then print fizzbuzz.
+      </p>
+    </main>
+    <script>
+      const num = 15;
+
+      // Here order is important, which condition has to run when?
+      if (num % 3 === 0 && num % 5 === 0) {
+        console.log("Fizzbuzz");
+      } else if (num % 3 === 0) {
+        console.log("Fizz");
+      } else if (num % 5 === 0) {
+        console.log("Buzz");
+      }
+    </script>
+  </body>
+</html>

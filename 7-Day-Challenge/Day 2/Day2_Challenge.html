@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge - Number Guessing Game</title>
+  </head>
+  <body>
+    <main>
+      <h2>
+        It's a number guessing game built by using js concepts what i've already
+        learnt.
+      </h2>
+    </main>
+    <script>
+      const gameNum = 16;
+
+      let userNum = Number(prompt("Guess the game number(1-20): "));
+
+      let chances = 5;
+
+      while (chances > 0) {
+        if (userNum === gameNum) {
+          alert("congratulations! you nailed it.");
+          break;
+        } else if (userNum > gameNum) {
+          alert("your number is greater than the game number.");
+        } else if (userNum < gameNum) {
+          alert("your number is less than the game number.");
+        } else {
+          alert("invalid input!");
+        }
+
+        if (chances > 0) {
+          userNum = Number(
+            prompt(`Enter the number again! ${chances} Chances left.`),
+          );
+        } else {
+          alert("Game Over!");
+        }
+        chances -= 1;
+      }
+    </script>
+  </body>
+</html>
