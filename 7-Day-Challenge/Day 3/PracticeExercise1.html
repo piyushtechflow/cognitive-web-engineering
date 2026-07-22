@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - Area Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h3>This is an area calculator.</h3>
+      <div class="selector">
+        <select name="select-shape" id="shapeSelection">
+          <option value="">Select the shape...</option>
+          <option value="rectangle">Rectangle</option>
+          <option value="square">Square</option>
+          <option value="circle">Circle</option>
+        </select>
+        <p id="msgPara"></p>
+      </div>
+      <div class="input-values">
+        <input
+          type="number"
+          placeholder="Enter first value (in cm): "
+          id="num1"
+        />
+        <input
+          type="number"
+          placeholder="Enter second value (in cm): "
+          id="num2"
+        />
+        <button id="btn">Calculate Area</button>
+      </div>
+      <div class="answer">
+        <p id="answerMsg"></p>
+      </div>
+    </main>
+    <script>
+      const firstNum = document.getElementById("num1");
+      const secondNum = document.getElementById("num2");
+
+      const shape = document.getElementById("shapeSelection");
+      const msgPara = document.getElementById("msgPara");
+
+      shape.addEventListener("change", () => {
+        msgPara.innerText = `It's ${shape.value} selected. ${paraMsg()}`;
+      });
+
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        const shapeValue = shape.value;
+        const firstVal = Number(firstNum.value);
+        const secondVal = Number(secondNum.value);
+        const answerMsg = document.getElementById("answerMsg");
+
+        if (shapeValue === "rectangle") {
+            alert(`The area of rectangle having side ${firstVal} and ${secondVal} is: ${rectangle(firstVal, secondVal)}`)
+        } else if (shapeValue === "square") {
+            alert(`The area of square having side ${firstVal} is: ${square(firstVal)}`)
+        } else if (shapeValue === "circle") {
+            alert(circle(firstVal))
+        }
+      });
+
+      function rectangle(l, b) {
+        return l * b;
+      }
+
+      function square(s) {
+        return s * s;
+      }
+
+      function circle(r) {
+        return 3.14 * r * r;
+      }
+
+      function paraMsg() {
+        if (shape.value === "rectangle") {
+          secondNum.disabled = false;
+          return "Enter values in both boxes as length and breadth...";
+        } else if (shape.value === "square") {
+          secondNum.disabled = true;
+          return "Enter value in only first box as side...";
+        } else if (shape.value === "circle") {
+          secondNum.disabled = true;
+          return "Enter value in only first box as radius...";
+        }
+      }
+    </script>
+  </body>
+</html>

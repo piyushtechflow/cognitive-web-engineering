@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3 - Object and Destructuring</title>
+  </head>
+  <body>
+    <main>
+      <h3>Exercise related to objects and destructuring</h3>
+      <p>All work is in console...</p>
+    </main>
+    <script>
+      const myData = {
+        name: "Piyush",
+        age: 18,
+        skills: ["Python", "JavaScript", "C++", "Public Speaking"],
+        isJobReady: true,
+        greet: (introduce = () => {
+          console.log(
+            `Hello my name is ${this.name} and i am ${this.age} years old.`,
+          );
+        }),
+      };
+      const { name, age } = myData;
+      const a = name;
+      const b = age;
+      console.log(`The name is ${a} and the age is ${b}.`);
+    </script>
+  </body>
+</html>

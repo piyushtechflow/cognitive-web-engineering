@@ -1,0 +1,17 @@
+### DAY 3 ###
+
+Topics - 
+	Functions Declaration, expressions, arrow functions
+	Array (push, pop, map, filter, for each)
+	Objects (key-value pairs), dot notation, bracket notation)
+	Destructuring
+
+Practice - 
+	Student Grade Calculator
+	Shopping Cart Object
+	Array filtering
+
+Challenge - 
+	Build a simple "contact book" using objects and arrays
+
+	

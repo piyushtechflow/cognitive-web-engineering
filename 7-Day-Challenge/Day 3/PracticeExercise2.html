@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2 - Array Methods</title>
+  </head>
+  <body>
+    <main>
+      <h2>This exercise is to filter an array and then map with pass sign.</h2>
+      <p>The whole work is in console...</p>
+    </main>
+
+    <script>
+      const arr = [35, 72, 48, 19, 85, 60, 38];
+      console.log(`The actual array is: ${arr}`);
+
+      const passedArr = arr.filter((arr) => arr >= 40);
+      console.log(`The numbers in actual array and greater than or equal to 40 are:  ${passedArr}`);
+
+      const mappedArr = passedArr.map(
+        (arrElements) => arrElements + " Passed ✔",
+      );
+      console.log(`Mapped Array: ${mappedArr}`);
+
+      const loopedArr = mappedArr.forEach((value) => {
+        console.log(`Traverse through all elements :${value}`);
+      });
+    </script>
+  </body>
+</html>
