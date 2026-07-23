@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 50px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border: none;
+  border-radius: 16px;
+}
+#colorCode {
+  color: #007bff;
+}
+#changeColor {
+  background-color: #ffffff;
+  margin-top: 16px;
+  color: #000000;
+  padding: 10px 30px;
+  font-size: 18px;
+  border: 0.5px solid black;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+}

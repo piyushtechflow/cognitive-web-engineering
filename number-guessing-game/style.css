@@ -1,0 +1,195 @@
+/* -------------------------------------------------------------
+   1. Modern CSS Variables & Resets
+------------------------------------------------------------- */
+:root {
+    --bg-main: linear-gradient(135deg, #090d16 0%, #111827 100%);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.08);
+    
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-glow: #6366f1;
+    
+    --color-success: #10b981;
+    --color-error: #ef4444;
+
+    --font-family: 'Plus Jakarta Sans', sans-serif;
+    --transition-speed: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--bg-main);
+    color: var(--text-main);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* -------------------------------------------------------------
+   2. Main Container Architecture
+------------------------------------------------------------- */
+.main-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    padding: 48px 36px;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Subtle decorative colored light strip at the top */
+.glow-accent {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+    filter: blur(1px);
+}
+
+/* -------------------------------------------------------------
+   3. Typography & Information
+------------------------------------------------------------- */
+.text-contents h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+#rangeMsg {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* -------------------------------------------------------------
+   4. Input Element Styling
+------------------------------------------------------------- */
+.input-area {
+    width: 100%;
+}
+
+#input-number {
+    width: 100%;
+    padding: 16px 20px;
+    outline: none;
+    border: 2px solid var(--card-border);
+    background: rgba(15, 23, 42, 0.4);
+    color: var(--text-main);
+    border-radius: 14px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--font-family);
+    transition: var(--transition-speed);
+}
+
+#input-number:focus {
+    border-color: var(--accent-glow);
+    background: rgba(15, 23, 42, 0.7);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+/* Strips native browser internal input utility arrows */
+#input-number::-webkit-outer-spin-button,
+#input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#input-number[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* -------------------------------------------------------------
+   5. Interactive Buttons & Game States
+------------------------------------------------------------- */
+.btn-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    background: var(--text-main);
+    color: #0f172a;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition-speed);
+}
+
+button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#chanceMsg {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   6. Dynamic Notification Typography (Targeted for JS Classes)
+------------------------------------------------------------- */
+#container {
+    font-size: 0.95rem;
+    font-weight: 600;
+    min-height: 24px;
+}
+
+.wrongInput {
+    color: var(--color-error);
+    text-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+    animation: pulseError 0.3s ease-in-out;
+}
+
+.correct {
+    color: var(--color-success);
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+/* Micro-animation feedback loop */
+@keyframes pulseError {
+    0% { transform: scale(0.98); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
