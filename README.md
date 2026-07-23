@@ -10,8 +10,8 @@ These projects leverage modern development workflows:
 
 ## Roadmap and Commitments ( Target: Full Stack Development )
 I am actively building out this portfolio with a strict timeline. From December 2026 to February 2027, this branch will host atleast 5 premium projects.
-Project 1: Number Guessing Game ( Updates will come with time )
-Project 2: Calculator ( with all updates and logics that keep it different from others )
+Project 1: Number Guessing Game - Live Link: https://cognitive-web-engineering-1kgt.vercel.app/
+Project 2: Color Picker Site - Live Link: https://cognitive-web-engineering.vercel.app/
 Project 3: [ Coming Soon ]
 Project 4: [ Coming Soon ]
 Project 5: A fully deployable production ready application designed for real world departmental utility.
