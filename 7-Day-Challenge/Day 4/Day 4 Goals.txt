@@ -1,0 +1,17 @@
+##### DAY 4 GOALS #####
+
+Topics: 
+	Global, Function, Block : Scope
+	Closures
+	DOM : querySelector, createElement, appnedChild.textContent, innerHTML
+	Event Listeners(click, input)
+
+Pracitce: 
+	Color changer,
+	Dynamic list builder
+
+
+Challenge: 
+	Counter app,
+	
+	
