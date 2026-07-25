@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <main>
+      <p>
+        The task is very simple to resolve a promise after 2s using .then() and
+        then convert it into async-await logic.
+      </p>
+      <p>
+        Everything is in the console and the script is written in the same file.
+      </p>
+    </main>
+    <script>
+      function fun1() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            let values = true;
+            if (values) {
+              resolve("Task Complete");
+            } else {
+              reject("Task incomplete!");
+            }
+          }, 2000);
+        });
+      }
+
+      fun1().then((res) => {
+        console.log("Done!", res);
+      });
+
+      async function fun2() {
+        try {
+          const funCall = await fun1();
+          console.log("Recieved: ", funCall);
+        } catch (err) {
+          console.log("Error: ", err);
+        } finally {
+          console.log("Everything closed now!");
+        }
+      }
+
+      fun2();
+    </script>
+  </body>
+</html>

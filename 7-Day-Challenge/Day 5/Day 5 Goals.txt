@@ -1,0 +1,15 @@
+######  DAY 5 TARGET ######
+
+Topics: 
+	Synchronous v Asynchronous, setTimeOut (call back)
+	Promises (.then, .catch)
+	async / await
+	try / catch for errors
+
+
+Practice: 
+	Chained promises - done in Changed-Promise.html
+	async function with error handling --- done in Exercise.html
+
+Challenge:
+	Fake API Simulation -- Done

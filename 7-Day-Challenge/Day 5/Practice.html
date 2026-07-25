@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>async-await</title>
+  </head>
+  <body>
+    <main>
+      <p>
+        Make a async function delayedGreet(name, seconds) and execute *Hello
+        name!* after seconds. Wrap setTimeout in Promise.
+      </p>
+      <p>All tasks are in console and in the same file...</p>
+    </main>
+    <script>
+      function greet(name, seconds) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log(`Hello ${name}`);
+          }, seconds);
+        });
+      }
+
+      async function delayedGreet(name, seconds) {
+        await greet("Piyush", 3000);
+      }
+      delayedGreet();
+    </script>
+  </body>
+</html>

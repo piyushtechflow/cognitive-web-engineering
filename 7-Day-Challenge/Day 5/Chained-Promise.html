@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chained Promises</title>
+  </head>
+  <body>
+    <main>
+      <p>Chain Promise Program</p>
+      <p>Program only for console</p>
+    </main>
+    <script>
+      function promise(value) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(`${value}`);
+          }, 2000);
+        });
+      }
+
+      promise(10)
+        .then((res) => {
+          console.log(res);
+          return Number(res) + 5;
+        })
+        .then((res) => {
+          console.log(res);
+          return res * 2;
+        })
+        .then((res) => {
+          console.log(res);
+          return res + 15;
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          console.log("All Done!");
+        });
+    </script>
+  </body>
+</html>
