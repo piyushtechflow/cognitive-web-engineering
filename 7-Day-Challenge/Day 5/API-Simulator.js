@@ -1,11 +1,3 @@
-/*
-1. async fnx banao
-2. 1.5s ka delay lagao
-3. agar id mile to students ka naam, marks ka avg, aur grade return karao
-4. id na mile to reject karo
-5. async-await aur try-catch se call karo dono id's pe - valid or invalid
- */
-
 const database = {
   101: { name: "Piyush", marks: [85, 92, 78, 95, 88] },
   102: { name: "Asmit", marks: [70, 65, 80, 75, 90] },
