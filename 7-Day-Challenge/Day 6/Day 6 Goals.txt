@@ -1,0 +1,18 @@
+********** DAY 6 GOALS **********
+
+Topics:
+	fetch() with async/await,
+	json handling,
+	API response parsing,
+	localStorage - setItem, getItem
+	JSON,
+	stringify, parse
+
+Practice: ✔ Done in the lessons - jsonConcept.js, fetchAPI.js, localStorage.js
+	Fetch something from a free API,
+	Save user name in localStorage,
+	Read and display saved data
+
+Challenge:
+	Fetch weather data from OpenWeatherMap API (free key) and display city + temperature 
+	
