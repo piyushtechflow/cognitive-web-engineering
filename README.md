@@ -15,7 +15,8 @@ Project 1: Number Guessing Game - Live Link: https://cognitive-web-engineering-1
 
 Project 2: Color Picker Site - Live Link: https://cognitive-web-engineering.vercel.app/
 
-Project 3: [ Coming Soon ]
+Project 3: Todo App - Live Link:
+https://cognitive-web-engineering-ejeg.vercel.app/
 
 Project 4: [ Coming Soon ]
 
